@@ -4916,7 +4916,7 @@ Overloads:
             }
 
             auto handle = lua.get_integer();
-            auto new_delay = lua_tointeger(L, 2);
+            auto new_delay = lua.get_integer();
             const auto mod = get_mod_ref(lua);
             const LuaMadeSimple::Lua* mod_hook_lua = mod->m_hook_lua;
             bool found = false;
